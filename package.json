@@ -1,0 +1,17 @@
+{
+  "name": "smart-home-stage5-website-best",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SMART HOME Stage 5: multi-home, owner/member, gateway pairing, detect-device, ESP32 WebSocket, Supabase.",
+  "scripts": {
+    "postinstall": "npm --prefix frontend install && npm --prefix backend install",
+    "install:all": "npm --prefix frontend install && npm --prefix backend install",
+    "dev": "node dev.js",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "esp32:provision": "node scripts/provision-esp32.js",
+    "esp32:upload": "node scripts/provision-esp32.js --upload"
+  }
+}
